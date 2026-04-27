@@ -1,0 +1,19 @@
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*~
+
+# LaTeX build artifacts
+Resume/*.aux
+Resume/*.log
+Resume/*.out
+Resume/*.synctex.gz
+Resume/*.toc
+Resume/*.fls
+Resume/*.fdb_latexmk

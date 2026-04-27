@@ -1,0 +1,270 @@
+\documentclass[letterpaper,12pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{multicol}
+\input{glyphtounicode}
+
+\usepackage[default]{sourcesanspro}
+\usepackage[T1]{fontenc}
+
+\pagestyle{fancy}
+\fancyhf{} 
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\setlength{\footskip}{3.7 pt}
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\centering
+}{}{0em}{}[\color{black}\titlerule\vspace{-5pt}]
+
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+
+
+\begin{center}
+    {\LARGE Zhijie Lyu} \\ \vspace{2pt}
+    \begin{multicols}{2}
+    \begin{flushleft}
+    %\href{{your github page link}}{my github}\\
+    {Email \\ }
+    \href{zhijie.lyu@gmail.com}
+    {zhijie.lyu@gmail.com} 
+    \end{flushleft}
+    \begin{flushright}
+    \href{https://www.linkedin.com/in/zhijie-lyu-7b461b293/}{https://www.linkedin.com/in/zhijie-lyu-7b461b293/}
+    \href{https://github.com/alsymiya}{https://github.com/alsymiya}
+    %{Phone: (1)631-202-9630}
+    \end{flushright}
+    \end{multicols}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\vspace{-2pt}
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Stony Brook University -- SUNY}{January 2020 -- Present}
+      {PhD student in Mechanical Engineering with a minor in Computer Science}{Stony Brook, New York, USA}
+  
+      \resumeSubheading
+      {Stony Brook University -- SUNY}{August 2018 -- January 2020}
+      {Master's student in Mechanical Engineering, Manufacturing Direction}{Stony Brook, New York, USA}
+
+    \resumeSubheading
+      {Southwest Jiaotong University}{August 2014 -- May 2018}
+      {Bachelor in Mechanical Engineering, Mechantronic Direction}{Sichuan, Chengdu, PRC}
+
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Coursework}{August 2018 -- December 2021}
+      {GPA during master's: 3.93; GPA during Ph.D.: 3.80}{}
+      \resumeItemListStart
+        \resumeItem{Topics: Robotics, Computer-Aided Design, Machine Learning, Analysis of Algorithms, Advanced Dynamics, Vibration and Control, Computer Vision, Artificial Intelligence}
+      \resumeItemListEnd
+    
+    \resumeSubheading
+      {Ph.D. Research}{January 2020 -- Present}
+      {Some for Machine Learning, some for Mathematical Data Structure, and most for Algorithms}{}
+      \resumeItemListStart
+        \resumeItem{Journal Publication Record: $4/6$ as first author. One featured article for JMD. } 
+        \resumeItem{Journal Review Record: multiple manuscripts from ASME-JMD, ASME-JMR and IEEE-THMS}
+      \resumeItemListEnd
+
+    \resumeSubheading
+    {Teaching Assistant}{January 2020 -- Present}
+    {Worked as TA for four undergraduate courses}{}
+
+    \resumeSubheading
+    {Academic Presentation}{August 2022, 2023, 2024, and 2025}
+    {Participated in four ASME IDETC/CIE}{}
+
+    \resumeSubheading
+    {Software Development (Funded by NSF and Mechanismic Inc.)}{May 2019 -- Present}
+    {Development and Evaluation of \href{motiongen.io}{MotionGen} }{}
+    \resumeItemListStart
+        \resumeItem{Display: implemented customizable shape elements on the canvas using paper.js (2019 -- 2020) }
+        \resumeItem{Fast Kinematic Solver: \\ Cooperated on a unified, generalizable, and efficient planar linkage simulator using approximation (2022); \\ Extended the simulation capability using an extended Pebble Game framework (2024 -- 2025)}
+        \resumeItem{Mechanism Synthesis Pipeline: Designed a common mathematical data structure for the geared linkage mechanisms; Generated a massive mechanism dataset for these mechanisms; Deployed a backend server using Google Cloud and a VAE-based pipeline; Reduced the storage of the same mechanism information data to $1/100$ of its original in the code base, and reduced the query time with the use of customized topology dictionary; Deployed the G-manifold algebraic fitting method for motion synthesis. (2022 -- 2025)}
+        \resumeItem{Impact: The number of registered users is approximately $88,000$ as of August 2025 since it had a registration system in 2022. A sharp increase in user registration occurred in August 2023 when a popular mechanism design channel Engineezy used our application to design a mechanism prototype. } \resumeItemListEnd
+
+    
+
+    
+  \resumeSubHeadingListEnd
+
+  %-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills, Language Skills, and Interests}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Programming Languages}{: JavaScript, Python, MatLab scripts, C++ (OOP)} \\
+     \textbf{Familiar Technologies}{: PyTorch, Matplotlib, Numpy, CUDA, Node.js, React-Redux} \\
+     \textbf{Writing}{: \LaTeX, Office} \\
+     \textbf{Languages}{: Cantonese (native), Mandarin Chinese (native), English (fluent)} \\
+     \textbf{Interests}{: Software Development, Applied Math Science, Machine Learning, Document Translation, Speedrunning in video games} \\ 
+    }}
+ \end{itemize}
+
+
+%-----------PUBLICATIONS-----------
+\newpage
+\section{Journal Publications (The first three have been implemented in MotionGen 2024)}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \item{
+    \textbf{A Unified Real-Time Motion Generation Algorithm for Approximate Position Analysis of Planar N-Bar Mechanisms - ASME Journal of Mechanical Design, June 2024, 146(6): 063302 (12 pages)}{\\ Authors: \textbf{ \emph{Zhijie Lyu}}, Wei Liao, Anurag Purwar}
+    {\\ \small{\begin{itemize}
+        \item Extended the prismatic joint approximation trick from specific cases in textbook to arbitrary combination cases; 
+        \item Defined a standardized matrix-set data structure for kinematically simulated samples, and their structural complexity analysis; 
+    \end{itemize} 
+    }}
+    }
+    \item{\textbf{Deep Learning Conceptual Design of Sit-to-Stand Parallel Motion Six-Bar Mechanisms - ASME Journal of Mechanical Design, July 2024, 147(1): 1-18}{\\ Authors: \textbf{\emph{Zhijie Lyu}}, Anurag Purwar}
+    {\\ \small{\begin{itemize}
+        \item Improved an atlas-based and data-driven approach for planar linkage path synthesis during data preprocessing; 
+        \item Used a Variational Auto-Encoder (VAE) along with three metrics to rank solution candidates retrieved from the dataset. 
+    \end{itemize}}}
+    \item{\textbf{A Dataset of 3M Single-DOF Planar 4-, 6-, and 8-bar Linkage Mechanisms with Open and Closed Coupler Curves for Machine Learning-Driven Path Synthesis, ASME Journal of Mechanical Design (Special Issue for IDETC-CIE 2024)}{\\ Authors: Anar Nurizada, Rohit Dhaipule, \emph{\textbf{Zhijie Lyu}}, Anurag Purwar}
+        {\\ \small{\begin{itemize}
+        \item A dataset of three million samples of R-joint and/or P-joint mechanisms is created with the simulation package of MotionGen; 
+        \item This dataset, together with a compact kinematic structure library, is implemented onto MotionGen using Google Cloud API with the synthesis method presented in the second publication. 
+    \end{itemize}}}
+    }
+    \item{\textbf{Point-based Models: A Unified Approach for Geometric Constraint Analysis of Planar N-Bar Mechanisms with Rotary, Sliding, and Rolling Joints, ASME Journal of Mechanisms and Robotics (Special Issue for IDETC-CIE 2024)}{\\ Authors: \textbf{\emph{Zhijie Lyu}}, Anurag Purwar}
+        {\\ \small{
+        \begin{itemize}
+        \item Developed the methodology and data structure to extend the constraint graph approach from two types of constraints (distance, angle) to three types (angle-angle); This is intended for the implementation of wheels/gears into the linkage system. 
+        \end{itemize}
+        }}
+    }
+    \item{\textbf{(Accepted) Construction, Reduction, and Decomposition of Planar Mechanisms via an Extended Pebble Game Framework}{\\ Authors: \textbf{\emph{Zhijie Lyu}}, Anurag Purwar}
+        {\\ \small{\begin{itemize}
+        \item Developed a modified pebble game framework to extend the constraint graph approach from two types of constraints (distance, angle) to three types (angle-angle); The framework analyzes the planar geared linkage system in polynomial time. 
+        \item The package has been completed in a Python-based prototype. 
+    \end{itemize}}}
+    \item{\textbf{Path Generative Model Based on Conditional $\beta$-Variational Auto Encoder for Four-Bar Mechanism Design, ASME Journal of Mechanisms and Robotics,  June 2025, 17(6): 061004}{\\ Authors: Anar Nurizada, \textbf{ \emph{Zhijie Lyu}}, Anurag Purwar}
+    {\\ \small{\begin{itemize}
+        \item The paper itself is mostly led by Anar Nurizada. The research goal is given some paths, the neural network outputs an initial guess on the mechanism configurations. 
+        \item I made an automated script on generating the four-bar mechanism cognates for any given four-bar linkage, and contributed to the text related to this part. 
+    \end{itemize}}}
+    }
+ \end{itemize}
+
+
+
+%-----------CERTIFICATIONS-----------
+\begin{comment}
+\section{Course and/or Hobby-based Projects}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+   \small{
+    \item{\textbf{Stony Brook University - MEC529 - Robotics}: \\
+    Baxter Robot Arm Writing a Letter on Vertical Board (MatLab script)
+    \item{\textbf{Stony Brook University - MEC572 - Computer Aided Design}: \\ 
+    Interactive Manipulation of NURBS Surfaces (C++ and JavaScript) }
+
+    \item{\textbf{Stony Brook University - MEC596 - Projects in Mechanical Engineering}: \\ Bluetooth-based connection between MatLab script and Arduino. Implementation of Q-learning algorithm for robot car clash prevention. }
+
+    \item{\textbf{Stony Brook University - AMS561 - Introduction to Computational and Data Science}: \\ Sudoku Solver using Depth-first search for 3x3 and 4x4. (Python)
+    }
+
+    \item{\textbf{Internship - Online Assessment for a Software Development Engineer role}: \\
+    Deployed a Weather Forecast App on Heroku with Create, Read, Update, and Delete functions (Python Flask, JavaScript, HTML, and CSS)}
+    }
+
+    
+        \item{Hobby - Novel / Video Translation: \\ Was an active Chinese-Japanese/English translator for Japanese novels and English video guides for competitive surf}
+    
+    
+}   
+\end{itemize}
+\end{comment}
+%-----------PROGRAMMING SKILLS-----------
+
+\begin{comment}
+    \section{Professional Activities}
+\begin{itemize}[leftmargin=0.15in, label={}]
+\item \textbf{Literature Review Service}{: 
+\begin{itemize}
+    \item Reviewed two submissions as an invited reviewer of the ASME Journal of Mechanical Design (JMD)
+\end{itemize}
+} \\ 
+\item \textbf{Teaching Assistant}: {
+\begin{itemize}
+    \item MEC 101 - Freshman Design Innovation (2021 Fall, 2024 Fall) 
+    \item MEC 260 - Engineering Statics (2021 Spring)
+    \item MEC 262 - Engineering Dynamics (2025 Spring)
+    \item MEC 410 - Design of Machine Elements (2022 Spring)
+\end{itemize}}
+\end{itemize}
+\end{comment}
+
+
+
+\end{document}
