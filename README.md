@@ -48,5 +48,3 @@ The `.nojekyll` file disables Jekyll processing so files starting with underscor
 ## Content sources
 
 The publication and CV content was assembled from the user's resume (`Resume/main.tex` and `Resume/main-v2.tex`) and the published-paper PDFs in `PhD_Thesis/PrevPub/`. First-author publications follow their published abstracts; co-author entries are kept brief, per the user's preference.
-
-The unpublished 2026 Assur graph work is intentionally **not** included.
