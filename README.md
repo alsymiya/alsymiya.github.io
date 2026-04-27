@@ -42,7 +42,7 @@ The `.nojekyll` file disables Jekyll processing so files starting with underscor
 
 - **Add a new publication** — copy any `<article class="pub" ...>` block in `index.html` and adjust the `data-tags` attribute (e.g. `first 2026`) so the filter chips pick it up.
 - **Change the accent colors** — `styles.css` top of file, the `:root` block: `--accent` (purple) and `--accent-2` (cyan). The hero name and key headings inherit from these.
-- **Add your headshot** — save a square crop (≈600×600 px) at `assets/img/avatar.jpg`. The hero avatar slot is already wired up: it shows the photo when present and falls back to a stylized "ZL" gradient mark otherwise. To use a different filename or extension, edit the single `<img src="assets/img/avatar.jpg" ...>` line in `index.html`.
+- **Replace the headshot** — drop a square crop (≈400–600 px) at `assets/img/avatar.png` (or `.jpg`). The hero avatar slot shows the photo when present and falls back to a stylized "ZL" gradient mark otherwise. To use a different filename or extension, edit the single `<img src="assets/img/avatar.png" ...>` line in `index.html`.
 - **Update the CV** — the website currently links to `Resume/main.tex`. To link a compiled PDF, place `resume.pdf` at the project root and change the `View LaTeX Source` button's `href` in `index.html`.
 
 ## Content sources
