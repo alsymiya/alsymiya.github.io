@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://alsymiya.github.io/sitemap.xml
