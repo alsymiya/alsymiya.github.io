@@ -82,8 +82,8 @@
         <ul class="nav-links" id="navLinks">
             <li><a href="#home" class="nav-link">Home</a></li>
             <li><a href="#about" class="nav-link">About</a></li>
-            <li><a href="#publications" class="nav-link">Publications</a></li>
             <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#publications" class="nav-link">Publications</a></li>
             <li><a href="#cv" class="nav-link">CV</a></li>
         </ul>
     </div>
@@ -179,10 +179,71 @@
     </div>
 </section>
 
-<!-- ============== PUBLICATIONS ============== -->
-<section class="section section-alt" id="publications">
+<!-- ============== PROJECTS ============== -->
+<section class="section section-alt" id="projects">
     <div class="container">
-        <p class="eyebrow">02 / Publications</p>
+        <p class="eyebrow">02 / Projects</p>
+        <h2 class="section-title">Software &amp; Research Projects</h2>
+        <p class="section-subtitle">Where research meets practice — code that ships to real users.</p>
+
+        <div class="project-grid">
+
+            <article class="project featured-project">
+                <div class="project-tag">Flagship · 2019 — Present</div>
+                <h3>MotionGen</h3>
+                <p class="project-sub">Web-based CAD application for planar mechanism design.<br/>Funded by NSF &amp; Mechanismic Inc.</p>
+                <p class="project-stat"><span class="stat-num">~100,000</span> registered users (Nov 2025)</p>
+                <ul class="project-bullets">
+                    <li><strong>Display</strong> — Implemented customizable shape elements on the canvas using paper.js (2019–2020).</li>
+                    <li><strong>Mechanism Simulation</strong> — Built a unified, generalizable, differentiable, efficient planar linkage simulator using approximation (2022); extended capability via a Pebble Game framework for gears and wheels (2024–2025).</li>
+                    <li><strong>Mechanism Synthesis</strong> — Deployed G-manifold algebraic fitting for motion synthesis (2022); backend on Google Cloud with a neural-network pipeline (2023); compact data structure cutting storage to 1/100 of original with custom topology dictionary (2024); 3M-sample dataset (2024); differential evolution for synthesis (2025).</li>
+                    <li><strong>On-going (2025–2026)</strong> — Vectorization of the simulator for real-time synthesis; differentiable physics for synthesis fine-tuning; multibody dynamics for real-time rendering.</li>
+                </ul>
+                <p class="project-impact">Sharp user-growth spike in August 2023 after the popular mechanism-design YouTube channel <em>Engineezy</em> used MotionGen to design a prototype.</p>
+                <div class="project-actions">
+                    <a href="https://motiongen.io" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Visit motiongen.io</a>
+                </div>
+            </article>
+
+            <article class="project">
+                <div class="project-tag">Algorithms · 2024 — 2025</div>
+                <h3>Extended Pebble Game Framework</h3>
+                <p class="project-sub">Polynomial-time mobility analysis for planar mechanisms with linkages, gears, and wheels.</p>
+                <ul class="project-bullets">
+                    <li>Extends classical pebble-game constraint analysis from 2 constraint types to 3 (distance, angle, angle-angle).</li>
+                    <li>Python prototype, intended for integration into the next MotionGen simulator.</li>
+                </ul>
+            </article>
+
+            <article class="project">
+                <div class="project-tag">Machine Learning · 2022 — 2024</div>
+                <h3>Mechanism Synthesis Pipeline (VAE)</h3>
+                <p class="project-sub">Atlas-based, data-driven path synthesis using Variational Auto-Encoders.</p>
+                <ul class="project-bullets">
+                    <li>Three-million-sample R/P-joint mechanism dataset.</li>
+                    <li>Three ranking metrics for retrieved candidates.</li>
+                    <li>Deployed end-to-end in MotionGen via Google Cloud API.</li>
+                </ul>
+            </article>
+
+            <article class="project">
+                <div class="project-tag">Research · 2025 — Present</div>
+                <h3>Differentiable Physics for Design</h3>
+                <p class="project-sub">Coupling ML with a custom differentiable simulator to land designs in the basin of attraction.</p>
+                <ul class="project-bullets">
+                    <li>Sampling-density study across topologies for reliable initialization.</li>
+                    <li>Submitted to ASME IDETC/CIE 2026.</li>
+                </ul>
+            </article>
+
+        </div>
+    </div>
+</section>
+
+<!-- ============== PUBLICATIONS ============== -->
+<section class="section" id="publications">
+    <div class="container">
+        <p class="eyebrow">03 / Publications</p>
         <h2 class="section-title">Selected Publications</h2>
         <p class="section-subtitle">Peer-reviewed journal papers and conference work. The first three have been deployed in <a href="https://motiongen.io" target="_blank" rel="noopener">MotionGen</a>.</p>
 
@@ -345,67 +406,6 @@
         </div>
 
         <p class="pub-footnote">Also serves as a peer reviewer for ASME-JMD, ASME-JMR, and IEEE-THMS.</p>
-    </div>
-</section>
-
-<!-- ============== PROJECTS ============== -->
-<section class="section" id="projects">
-    <div class="container">
-        <p class="eyebrow">03 / Projects</p>
-        <h2 class="section-title">Software &amp; Research Projects</h2>
-        <p class="section-subtitle">Where research meets practice — code that ships to real users.</p>
-
-        <div class="project-grid">
-
-            <article class="project featured-project">
-                <div class="project-tag">Flagship · 2019 — Present</div>
-                <h3>MotionGen</h3>
-                <p class="project-sub">Web-based CAD application for planar mechanism design.<br/>Funded by NSF &amp; Mechanismic Inc.</p>
-                <p class="project-stat"><span class="stat-num">~100,000</span> registered users (Nov 2025)</p>
-                <ul class="project-bullets">
-                    <li><strong>Display</strong> — Implemented customizable shape elements on the canvas using paper.js (2019–2020).</li>
-                    <li><strong>Mechanism Simulation</strong> — Built a unified, generalizable, differentiable, efficient planar linkage simulator using approximation (2022); extended capability via a Pebble Game framework for gears and wheels (2024–2025).</li>
-                    <li><strong>Mechanism Synthesis</strong> — Deployed G-manifold algebraic fitting for motion synthesis (2022); backend on Google Cloud with a neural-network pipeline (2023); compact data structure cutting storage to 1/100 of original with custom topology dictionary (2024); 3M-sample dataset (2024); differential evolution for synthesis (2025).</li>
-                    <li><strong>On-going (2025–2026)</strong> — Vectorization of the simulator for real-time synthesis; differentiable physics for synthesis fine-tuning; multibody dynamics for real-time rendering.</li>
-                </ul>
-                <p class="project-impact">Sharp user-growth spike in August 2023 after the popular mechanism-design YouTube channel <em>Engineezy</em> used MotionGen to design a prototype.</p>
-                <div class="project-actions">
-                    <a href="https://motiongen.io" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Visit motiongen.io</a>
-                </div>
-            </article>
-
-            <article class="project">
-                <div class="project-tag">Algorithms · 2024 — 2025</div>
-                <h3>Extended Pebble Game Framework</h3>
-                <p class="project-sub">Polynomial-time mobility analysis for planar mechanisms with linkages, gears, and wheels.</p>
-                <ul class="project-bullets">
-                    <li>Extends classical pebble-game constraint analysis from 2 constraint types to 3 (distance, angle, angle-angle).</li>
-                    <li>Python prototype, intended for integration into the next MotionGen simulator.</li>
-                </ul>
-            </article>
-
-            <article class="project">
-                <div class="project-tag">Machine Learning · 2022 — 2024</div>
-                <h3>Mechanism Synthesis Pipeline (VAE)</h3>
-                <p class="project-sub">Atlas-based, data-driven path synthesis using Variational Auto-Encoders.</p>
-                <ul class="project-bullets">
-                    <li>Three-million-sample R/P-joint mechanism dataset.</li>
-                    <li>Three ranking metrics for retrieved candidates.</li>
-                    <li>Deployed end-to-end in MotionGen via Google Cloud API.</li>
-                </ul>
-            </article>
-
-            <article class="project">
-                <div class="project-tag">Research · 2025 — Present</div>
-                <h3>Differentiable Physics for Design</h3>
-                <p class="project-sub">Coupling ML with a custom differentiable simulator to land designs in the basin of attraction.</p>
-                <ul class="project-bullets">
-                    <li>Sampling-density study across topologies for reliable initialization.</li>
-                    <li>Submitted to ASME IDETC/CIE 2026.</li>
-                </ul>
-            </article>
-
-        </div>
     </div>
 </section>
 
