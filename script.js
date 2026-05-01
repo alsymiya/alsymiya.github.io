@@ -74,6 +74,21 @@
         });
     });
 
+    // ---------- Theme toggle (light / dark) ----------
+    var themeToggle = document.getElementById('themeToggle');
+    if (themeToggle) {
+        themeToggle.addEventListener('click', function () {
+            var current = document.documentElement.getAttribute('data-theme') === 'light' ? 'light' : 'dark';
+            var next = current === 'light' ? 'dark' : 'light';
+            if (next === 'light') {
+                document.documentElement.setAttribute('data-theme', 'light');
+            } else {
+                document.documentElement.removeAttribute('data-theme');
+            }
+            try { localStorage.setItem('theme', next); } catch (e) { /* ignore */ }
+        });
+    }
+
     // ---------- Reveal-on-scroll ----------
     if ('IntersectionObserver' in window) {
         var io = new IntersectionObserver(function (entries) {
