@@ -898,14 +898,59 @@ ul { padding-left: 1.2rem; }
     font-size: 0.9rem;
 }
 .footer-links a:hover { color: var(--accent-2); }
+/* ---------- Research philosophy block (inside About) ---------- */
+.philosophy {
+    margin-top: 3rem;
+    padding-top: 2.2rem;
+    border-top: 1px solid var(--border);
+    max-width: 780px;
+}
+.philosophy-h {
+    margin: 0 0 1.1rem 0;
+    color: var(--text);
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+}
+.philosophy-h::before {
+    content: "";
+    display: inline-block;
+    width: 22px;
+    height: 2px;
+    background: var(--grad);
+    margin-right: 0.7rem;
+    vertical-align: middle;
+    transform: translateY(-2px);
+}
+.philosophy p {
+    color: var(--text-soft);
+    line-height: 1.75;
+    margin: 0 0 1rem 0;
+    font-size: 0.97rem;
+}
+.philosophy p:last-child { margin-bottom: 0; }
+
+.footer-quote {
+    grid-column: 1 / -1;
+    text-align: center;
+    color: var(--text-soft);
+    font-style: italic;
+    font-size: 0.95rem;
+    margin: 1.8rem auto 0;
+    padding-top: 1.4rem;
+    max-width: 640px;
+    line-height: 1.55;
+    border-top: 1px solid var(--border);
+}
 .footer-copy {
     grid-column: 1 / -1;
     text-align: center;
     color: var(--text-muted);
     font-size: 0.8rem;
-    margin: 1.6rem 0 0 0;
-    padding-top: 1.2rem;
-    border-top: 1px solid var(--border);
+    margin: 1rem 0 0 0;
+    padding-top: 0;
+    border-top: none;
 }
 
 /* ---------- Responsive ---------- */
