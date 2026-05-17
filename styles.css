@@ -647,6 +647,7 @@ ul { padding-left: 1.2rem; }
 .pub-badge.featured-badge { background: rgba(251,146,60,0.12); color: #fdba74; border: 1px solid rgba(251,146,60,0.4); }
 .pub-badge.new-badge { background: rgba(34,197,94,0.12); color: #86efac; border: 1px solid rgba(34,197,94,0.4); }
 .pub-badge.submitted { background: rgba(148,163,184,0.12); color: #cbd5e1; border: 1px solid rgba(148,163,184,0.3); }
+.pub-badge.accepted { background: rgba(34,197,94,0.12); color: #86efac; border: 1px solid rgba(34,197,94,0.4); }
 .pub-badge.mentor { background: rgba(244,114,182,0.12); color: #f9a8d4; border: 1px solid rgba(244,114,182,0.3); }
 
 .pub-title {
