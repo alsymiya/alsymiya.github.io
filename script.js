@@ -134,7 +134,21 @@
             n.addEventListener('mouseleave', depClear);
             n.addEventListener('focus',  function () { depActivate(n.getAttribute('data-group')); });
             n.addEventListener('blur',   depClear);
+            // Touch: tap a node to toggle its description (and clear when tapping another)
+            n.addEventListener('click', function (e) {
+                e.preventDefault();
+                var g = n.getAttribute('data-group');
+                if (n.classList.contains('is-active')) {
+                    depClear();
+                } else {
+                    depActivate(g);
+                }
+            });
         });
+        // Tapping outside any node clears the active state on touch devices
+        document.addEventListener('touchstart', function (e) {
+            if (!depSvg.contains(e.target)) depClear();
+        }, { passive: true });
     }
 
     // ---------- Reveal-on-scroll ----------
