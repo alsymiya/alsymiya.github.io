@@ -2,9 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://alsymiya.github.io/</loc>
-    <lastmod>2026-04-27</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://alsymiya.github.io/updates.html</loc>
+    <lastmod>2026-05-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://alsymiya.github.io/assets/papers/Lyu_NBar_JMD_2024.pdf</loc>
@@ -27,7 +33,7 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://alsymiya.github.io/assets/papers/Walking_Mechanism_MDPI_2025.pdf</loc>
+    <loc>https://alsymiya.github.io/assets/papers/Tang_LegMechanism_Machines_2026.pdf</loc>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
