@@ -1,6 +1,6 @@
 # Zhijie Lyu — Personal Website
 
-A modern dark-portfolio static site for **Zhijie Lyu**, PhD candidate in Mechanical Engineering at Stony Brook University. Single-page layout with Home/About, Publications, Projects, and CV sections. Built with plain HTML + CSS + a tiny vanilla-JS file — no build step, ready for GitHub Pages.
+A modern dark-portfolio static site for **Zhijie Lyu**, PhD in Mechanical Engineering from Stony Brook University. Single-page layout with Home/About, Publications, Projects, and CV sections. Built with plain HTML + CSS + a tiny vanilla-JS file — no build step, ready for GitHub Pages.
 
 ## File layout
 
