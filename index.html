@@ -95,7 +95,7 @@
             <li><a href="#home" class="nav-link">Home</a></li>
             <li><a href="#about" class="nav-link">About</a></li>
             <li><a href="#projects" class="nav-link">Projects</a></li>
-            <li><a href="#publications" class="nav-link">Publications</a></li>
+            <li><a href="publications.html" class="nav-link">Publications</a></li>
             <li><a href="#cv" class="nav-link">CV</a></li>
             <li><a href="updates.html" class="nav-link">Updates</a></li>
         </ul>
@@ -140,7 +140,7 @@
             I write fast algorithms for designing <strong>mechanical linkages</strong> — the moving joints, gears, and arms behind walking robots, assistive devices, and machine tools. I built the simulation core of <a href="https://motiongen.io" target="_blank" rel="noopener">MotionGen</a>, a web-based CAD application used by <strong>110,000 registered users (May 2026)</strong>.
         </p>
         <div class="hero-cta">
-            <a href="#publications" class="btn btn-primary">View Publications</a>
+            <a href="publications.html" class="btn btn-primary">View Publications</a>
             <a href="#projects" class="btn btn-ghost">See Projects</a>
         </div>
         <div class="hero-links">
@@ -402,171 +402,12 @@
 </section>
 
 <!-- ============== PUBLICATIONS ============== -->
-<section class="section" id="publications">
+<section class="section" id="publications-preview">
     <div class="container">
         <p class="eyebrow">03 / Publications</p>
-        <h2 class="section-title">Selected Publications</h2>
-        <p class="section-subtitle">Peer-reviewed journal papers and conference work. The first three have been deployed in <a href="https://motiongen.io" target="_blank" rel="noopener">MotionGen</a>.</p>
-
-        <div class="pub-filter">
-            <button class="chip is-active" data-filter="all">All</button>
-            <button class="chip" data-filter="first">First-author</button>
-            <button class="chip" data-filter="2026">2026</button>
-            <button class="chip" data-filter="2025">2025</button>
-            <button class="chip" data-filter="2024">2024</button>
-        </div>
-
-        <div class="pub-list">
-
-            <!-- 1. N-Bar JMD 2024 (built on 2022 M.S. thesis) -->
-            <article class="pub" data-tags="first 2024 2022">
-                <div class="pub-year">2024</div>
-                <div class="pub-body">
-                    <span class="pub-badge first">First Author</span>
-                    <h3 class="pub-title">A Unified Real-Time Motion Generation Algorithm for Approximate Position Analysis of Planar N-Bar Mechanisms</h3>
-                    <p class="pub-authors"><strong>Zhijie Lyu</strong>, Wei Liao, Anurag Purwar</p>
-                    <p class="pub-venue"><em>ASME Journal of Mechanical Design</em>, June 2024, 146(6): 063302 (12 pages)</p>
-                    <ul class="pub-points">
-                        <li>Extended the prismatic-joint approximation trick from textbook special cases to arbitrary combinations of joints.</li>
-                        <li>Defined a standardized matrix-set data structure for kinematically simulated samples and analyzed its structural complexity.</li>
-                        <li>Documents the core of the 2022–2025 MotionGen simulator.</li>
-                        <li>Distilled from the author's M.S. thesis, <em>Real-Time Kinematic Simulation of Planar Linkage Mechanisms</em> (Stony Brook, August 2022) &mdash; the thesis contains the longer, original treatment.</li>
-                    </ul>
-                    <div class="pub-actions">
-                        <a href="assets/papers/Lyu_NBar_JMD_2024.pdf" target="_blank" rel="noopener" class="btn btn-sm">PDF</a>
-                        <a href="https://doi.org/10.1115/1.4064132" target="_blank" rel="noopener" class="btn btn-sm btn-outline">DOI</a>
-                        <a href="assets/papers/Lyu_MS_Thesis_2022.pdf" target="_blank" rel="noopener" class="btn btn-sm btn-outline">M.S. Thesis</a>
-                    </div>
-                </div>
-            </article>
-
-            <!-- 2. STS JMD 2024 -->
-            <article class="pub featured" data-tags="first 2024">
-                <div class="pub-year">2024</div>
-                <div class="pub-body">
-                    <span class="pub-badge first">First Author</span>
-                    <span class="pub-badge featured-badge">Featured Article</span>
-                    <h3 class="pub-title">Deep Learning Conceptual Design of Sit-to-Stand Parallel Motion Six-Bar Mechanisms</h3>
-                    <p class="pub-authors"><strong>Zhijie Lyu</strong>, Anurag Purwar</p>
-                    <p class="pub-venue"><em>ASME Journal of Mechanical Design</em>, July 2024, 147(1): 1–18</p>
-                    <ul class="pub-points">
-                        <li>Improved an atlas-based, data-driven approach for planar linkage path synthesis through targeted data preprocessing.</li>
-                        <li>Used a Variational Auto-Encoder (VAE) with three ranking metrics to rank candidate solutions retrieved from the dataset.</li>
-                        <li>Selected as a <strong>featured article</strong> by editor Faez Ahmed (MIT).</li>
-                    </ul>
-                    <div class="pub-actions">
-                        <a href="assets/papers/Lyu_STS_JMD_2024.pdf" target="_blank" rel="noopener" class="btn btn-sm">PDF</a>
-                        <a href="https://doi.org/10.1115/1.4065221" target="_blank" rel="noopener" class="btn btn-sm btn-outline">DOI</a>
-                    </div>
-                </div>
-            </article>
-
-            <!-- 3. Dataset JMD 2024 -->
-            <article class="pub" data-tags="2024">
-                <div class="pub-year">2024</div>
-                <div class="pub-body">
-                    <span class="pub-badge co">Co-Author</span>
-                    <h3 class="pub-title">A Dataset of 3M Single-DOF Planar 4-, 6-, and 8-bar Linkage Mechanisms with Open and Closed Coupler Curves for Machine Learning-Driven Path Synthesis</h3>
-                    <p class="pub-authors">Anar Nurizada, Rohit Dhaipule, <strong>Zhijie Lyu</strong>, Anurag Purwar</p>
-                    <p class="pub-venue"><em>ASME Journal of Mechanical Design</em>, Special Issue for IDETC-CIE 2024</p>
-                    <ul class="pub-points">
-                        <li>A dataset of three million R-joint and/or P-joint mechanism samples generated using the MotionGen simulation package.</li>
-                        <li>Deployed in MotionGen via Google Cloud API together with a compact kinematic structure library.</li>
-                    </ul>
-                    <div class="pub-actions">
-                        <a href="assets/papers/Nurizada_Dataset_JMD_2024.pdf" target="_blank" rel="noopener" class="btn btn-sm">PDF</a>
-                    </div>
-                </div>
-            </article>
-
-            <!-- 4. PointModel JMR 2025 -->
-            <article class="pub" data-tags="first 2025">
-                <div class="pub-year">2025</div>
-                <div class="pub-body">
-                    <span class="pub-badge first">First Author</span>
-                    <h3 class="pub-title">Point-based Models: A Unified Approach for Geometric Constraint Analysis of Planar N-Bar Mechanisms with Rotary, Sliding, and Rolling Joints</h3>
-                    <p class="pub-authors"><strong>Zhijie Lyu</strong>, Anurag Purwar</p>
-                    <p class="pub-venue"><em>ASME Journal of Mechanisms and Robotics</em>, Special Issue for IDETC-CIE 2024</p>
-                    <ul class="pub-points">
-                        <li>Developed methodology and data structures that extend the constraint-graph approach from two constraint types (distance, angle) to three (angle-angle), enabling implementation of wheels and gears in linkage systems.</li>
-                        <li>Theoretical foundation: wheels can be represented as linkages, allowing all elements to be analyzed like a truss structure.</li>
-                    </ul>
-                    <div class="pub-actions">
-                        <a href="assets/papers/Lyu_PointModel_JMR_2025.pdf" target="_blank" rel="noopener" class="btn btn-sm">PDF</a>
-                    </div>
-                </div>
-            </article>
-
-            <!-- 5. Pebble Game JMR 2025 -->
-            <article class="pub" data-tags="first 2025">
-                <div class="pub-year">2025</div>
-                <div class="pub-body">
-                    <span class="pub-badge first">First Author</span>
-                    <h3 class="pub-title">Construction, Reduction, and Decomposition of Planar Mechanisms via an Extended Pebble Game Framework</h3>
-                    <p class="pub-authors"><strong>Zhijie Lyu</strong>, Anurag Purwar</p>
-                    <p class="pub-venue"><em>ASME Journal of Mechanisms and Robotics</em>, December 2025, 17(12): 121009 (15 pages)</p>
-                    <ul class="pub-points">
-                        <li>Modified pebble-game framework that extends constraint-graph analysis from two constraint types (distance, angle) to three (angle-angle).</li>
-                        <li>Analyzes planar geared linkage systems in <strong>polynomial time</strong>.</li>
-                        <li>A polynomial-time algorithm for general mobility analysis, expanded from linkages to gears + linkages. Python prototype completed.</li>
-                    </ul>
-                    <div class="pub-actions">
-                        <a href="assets/papers/Lyu_PebbleGame_JMR_2025.pdf" target="_blank" rel="noopener" class="btn btn-sm">PDF</a>
-                    </div>
-                </div>
-            </article>
-
-            <!-- 6. Path Generative Model JMR 2025 -->
-            <article class="pub" data-tags="2025">
-                <div class="pub-year">2025</div>
-                <div class="pub-body">
-                    <span class="pub-badge co">Co-Author</span>
-                    <h3 class="pub-title">Path Generative Model Based on Conditional &beta;-Variational Auto-Encoder for Four-Bar Mechanism Design</h3>
-                    <p class="pub-authors">Anar Nurizada, <strong>Zhijie Lyu</strong>, Anurag Purwar</p>
-                    <p class="pub-venue"><em>ASME Journal of Mechanisms and Robotics</em>, June 2025, 17(6): 061004</p>
-                    <ul class="pub-points">
-                        <li>Given a target path, the neural network outputs an initial guess for the mechanism configuration.</li>
-                        <li>Contributed an automated script that generates four-bar mechanism cognates for any given four-bar linkage.</li>
-                    </ul>
-                </div>
-            </article>
-
-            <!-- 7. Tang et al. MDPI Machines 2026 (mentorship) -->
-            <article class="pub" data-tags="2026">
-                <div class="pub-year">2026</div>
-                <div class="pub-body">
-                    <span class="pub-badge mentor">Mentorship</span>
-                    <h3 class="pub-title">Kinematic Synthesis of Planar Leg Mechanisms through Large-Scale Dataset Generation, Geometric Filtering, and Optimization</h3>
-                    <p class="pub-authors">Ray Tang, <strong>Zhijie Lyu</strong>, Anurag Purwar</p>
-                    <p class="pub-venue"><em>MDPI Machines</em>, 14(3): 253, 2026</p>
-                    <ul class="pub-points">
-                        <li>Mentored Ray Tang on a large-scale dataset and geometric-filtering pipeline for planar leg mechanism synthesis, with differential evolution for fine-tuning.</li>
-                    </ul>
-                    <div class="pub-actions">
-                        <a href="assets/papers/Tang_LegMechanism_Machines_2026.pdf" target="_blank" rel="noopener" class="btn btn-sm">PDF</a>
-                    </div>
-                </div>
-            </article>
-
-            <!-- 8. IDETC 2026 (submitted) -->
-            <article class="pub" data-tags="first 2026">
-                <div class="pub-year">2026</div>
-                <div class="pub-body">
-                    <span class="pub-badge first">First Author</span>
-                    <span class="pub-badge accepted">Accepted</span>
-                    <h3 class="pub-title">Data-Driven Design using Differentiable Physics: Sampling Density for Reliable Initialization into Basin of Attraction</h3>
-                    <p class="pub-authors"><strong>Zhijie Lyu</strong>, Suhas Gangireddy, Anurag Purwar</p>
-                    <p class="pub-venue"><em>ASME IDETC/CIE 2026</em> (Accepted)</p>
-                    <ul class="pub-points">
-                        <li>Integrated machine learning with a customized differentiable simulator to generate precise, satisfactory designs.</li>
-                        <li>Experimented across topologies to characterize their respective sampling densities.</li>
-                    </ul>
-                </div>
-            </article>
-
-        </div>
-
-        <p class="pub-footnote">Also serves as a peer reviewer for ASME-JMD, ASME-JMR, and IEEE-THMS.</p>
+        <h2 class="section-title">Research publications</h2>
+        <p class="section-subtitle">Peer-reviewed work in computational kinematics, mechanism design, geometric constraints, and data-driven engineering.</p>
+        <a href="publications.html" class="btn btn-primary">Browse Publications</a>
     </div>
 </section>
 

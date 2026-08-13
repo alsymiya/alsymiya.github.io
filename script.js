@@ -29,8 +29,12 @@
         }
         navLinks.forEach(function (link) {
             var href = link.getAttribute('href') || '';
-            if (href === '#' + current) link.classList.add('active');
-            else link.classList.remove('active');
+            // Scroll-spy only manages same-page hash links. Page links keep
+            // their server-rendered active state on standalone pages.
+            if (href.charAt(0) === '#') {
+                if (href === '#' + current) link.classList.add('active');
+                else link.classList.remove('active');
+            }
         });
     }
     window.addEventListener('scroll', onScroll, { passive: true });
