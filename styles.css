@@ -390,7 +390,7 @@ ul { padding-left: 1.2rem; }
     color: var(--text-soft);
     font-size: 0.9rem;
     background: rgba(20, 26, 46, 0.55);
-    transition: border-color .2s ease, color .2s ease, transform .2s ease, background .2s ease;
+    transition: border-color .2s ease, color .2s ease, transform .2s ease, background .2s ease, box-shadow .2s ease;
 }
 .iconlink svg { width: 16px; height: 16px; }
 .iconlink:hover {
@@ -398,6 +398,20 @@ ul { padding-left: 1.2rem; }
     color: var(--text);
     transform: translateY(-2px);
     background: rgba(124, 92, 255, 0.12);
+}
+
+[data-theme="light"] .iconlink {
+    color: #4f3dbb;
+    background: linear-gradient(135deg, rgba(124, 92, 255, 0.11), rgba(14, 155, 187, 0.07));
+    border-color: rgba(124, 92, 255, 0.30);
+    box-shadow: 0 3px 12px rgba(79, 61, 187, 0.08);
+}
+[data-theme="light"] .iconlink:hover,
+[data-theme="light"] .iconlink:focus-visible {
+    color: #38259d;
+    background: linear-gradient(135deg, rgba(124, 92, 255, 0.18), rgba(14, 155, 187, 0.13));
+    border-color: rgba(79, 61, 187, 0.62);
+    box-shadow: 0 7px 20px rgba(79, 61, 187, 0.16);
 }
 
 .scroll-cue {
