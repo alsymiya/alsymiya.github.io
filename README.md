@@ -1,12 +1,15 @@
 # Zhijie Lyu — Personal Website
 
-A modern dark-portfolio static site for **Zhijie Lyu**, PhD in Mechanical Engineering from Stony Brook University. Single-page layout with Home/About, Publications, Projects, and CV sections. Built with plain HTML + CSS + a tiny vanilla-JS file — no build step, ready for GitHub Pages.
+A modern portfolio site for **Zhijie Lyu**, PhD in Mechanical Engineering from Stony Brook University. The focused homepage links to dedicated Publications, CV, and Updates pages. Built with plain HTML + CSS + a tiny vanilla-JS file — no build step, ready for GitHub Pages.
 
 ## File layout
 
 ```
 .
-├── index.html          # the entire site (single page, anchor-scrolled)
+├── index.html          # focused homepage: Home, About, and Projects
+├── publications.html   # publication list and filters
+├── cv.html             # education, experience, skills, and resume links
+├── updates.html        # dated news and milestones
 ├── styles.css          # design tokens + dark theme
 ├── script.js           # nav, scroll-spy, publication filter, reveal-on-scroll
 ├── .nojekyll           # tells GitHub Pages not to run Jekyll
@@ -40,10 +43,10 @@ The `.nojekyll` file disables Jekyll processing so files starting with underscor
 
 ## Editing tips
 
-- **Add a new publication** — copy any `<article class="pub" ...>` block in `index.html` and adjust the `data-tags` attribute (e.g. `first 2026`) so the filter chips pick it up.
+- **Add a new publication** — copy any `<article class="pub" ...>` block in `publications.html` and adjust the `data-tags` attribute (e.g. `first 2026`) so the filter chips pick it up.
 - **Change the accent colors** — `styles.css` top of file, the `:root` block: `--accent` (purple) and `--accent-2` (cyan). The hero name and key headings inherit from these.
 - **Replace the headshot** — drop a square crop (≈400–600 px) at `assets/img/avatar.png` (or `.jpg`). The hero avatar slot shows the photo when present and falls back to a stylized "ZL" gradient mark otherwise. To use a different filename or extension, edit the single `<img src="assets/img/avatar.png" ...>` line in `index.html`.
-- **Update the CV** — the website currently links to `Resume/main.tex`. To link a compiled PDF, place `resume.pdf` at the project root and change the `View LaTeX Source` button's `href` in `index.html`.
+- **Update the CV** — edit the summary in `cv.html`; the downloadable PDF lives at `Resume/Lyu_Zhijie_Resume.pdf`, with its LaTeX source in `Resume/main.tex`.
 
 ## Content sources
 
